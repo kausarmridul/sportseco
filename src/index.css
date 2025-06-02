@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-poppins
+  }
+
+  input[type="checkbox"].product-input {
+    @apply accent-col-1 w-[18px] h-[18px]
+  }
+
+}
+
+@layer components {
+  .containerr {
+    @apply px-2 container
+  }
+
+  .nav-link {
+    @apply font-normal relative text-white text-xl leading-6 inline-block
+  }
+
+  .hover-1 {
+    @apply transition-all duration-300
+  }
+
+  .hover-1:hover {
+    @apply -translate-y-1
+  }
+
+  .nav-active::after {
+    content: '';
+    @apply w-3/12 h-[3px] bg-col-2 inline-block absolute -bottom-2 left-0 rounded-full
+  }
+
+
+}
